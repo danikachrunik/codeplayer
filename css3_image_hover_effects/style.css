@@ -1,0 +1,97 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	background-color: #222;
+	background: url('http://thecodeplayer.com/uploads/media/pxpat.png');
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	padding: 30px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #ccc;
+	text-decoration: underline;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding-bottom: 200px;
+}
+
+/****Gallery*****/
+
+#gallery {
+	width: 725px;
+	margin: 25px auto;
+}
+
+#gallery a, #gallery a img {
+	display: block;
+}
+
+#gallery a {
+	float: left;
+	margin-bottom: 25px;
+	position: relative;
+	-webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+#gallery a img {
+	transition: all 0.5s;
+}
+
+/*Hover effects*/
+#gallery a img:hover {
+	-webkit-filter: none; /*Returns to default state*/
+}
+
+/*left ant right margins to the middle column(this selects the 2nd, 5th and 8th pics)*/
+#gallery a:nth-child(3n+2) {
+	margin: 0 25px 25px 25px;
+}
+
+/*Title styles*/
+.title {
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+	z-index: 1;
+	padding: 5px 7px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/*Filter styles*/
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.opacity {-webkit-filter: opacity(50%);}
+
+
+
+
+
+
+
+
