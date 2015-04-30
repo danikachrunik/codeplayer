@@ -1,21 +1,5 @@
 /*Jquery time*/
 $(document).ready(function(){
-	$("#lightbox li").click(function(){
-		var item = $(this);
-		var img = item.find("img");
-		var title = item.find(".title").html();
-
-		//The large image
-		var image_
-
-		//Remove active class from previously clicked LI
-		$("#lightbox li.active").removeClass("active");
-		//Mark the clicked LI as active for later use
-		item.addClass("active");
-	})
-
-/*Jquery time*/
-$(document).ready(function(){
 	var item, img, title, large_img;
 	var CW, CH, CL, CT, hpadding, vpadding, imgtag;
 	//Flag for preventing multiple image displays
@@ -38,10 +22,10 @@ $(document).ready(function(){
 		//The large image
 		large_img = new Image();
 		//Use data-large or the src itself if large image url is not available
-		large_img.src = img.attr("data-large") ? img.attr("data-large") : img.attr("src");
+		large_img.src = img.attr("data-large")?img.attr("data-large"):img.attr("src");
 
 		//Adding additional HTML - only if it hasn't been added before
-		if($(".lb_backdrop").length < 1)
+		if($(".lb_backdrop").length<1)
 		{
 			var lb_backdrop = '<div class="lb_backdrop"></div>';
 			var lb_canvas = '<div class="lb_canvas"></div>';

@@ -9,7 +9,7 @@ body {
 
 #lightbox {
 	margin: 10px auto;
-	width: 520px; 
+	width: 520px;
 	border-bottom: 1px solid #ccc;
 }
 #lightbox h1 {
@@ -98,8 +98,6 @@ body {
      url('http://thecodeplayer.com/uploads/fonts/websymbols.ttf') format('truetype'),
 	 url('http://thecodeplayer.com/uploads/fonts/websymbols.svg#WebSymbolsRegular') format('svg');
 }
-
-
 
 /*Lightbox element style*/
 .lb_backdrop {
